@@ -220,14 +220,14 @@ const Landing = () => {
                         />
                     </div>
                 </section>
-                <section className="mt-40">
-                    <div className="flex lg:flex-row justify-between md:flex-col sm:flex-col">
-                        <div className="container drop-shadow-2xl rounded-2xl p-10">
+                <section className="mt-40 border">
+                    <div className="flex lg:flex-row justify-between flex-col">
+                        <div className="rounded-2xl sm:justify-self-center pb-10 md:p-10">
                             <img src={assetpesan} alt="" className="pr-20" />
                         </div>
-                        <div className="self-center w-1/2 ">
-                            <div className="text-left pt-10 pb-10 rounded-3xl drop-shadow-lg bg-white p-10">
-                                <h1 className="font-bold lg:text-4xl md:text-4xl sm:text-3xl text-black-500 pb-5">KEMEDIK</h1>
+                        <div className="self-center md:w-1/2 w-full">
+                            <div className="text-left rounded-3xl drop-shadow-lg bg-white p-10">
+                                <h1 className="font-bold  md:text-4xl text-3xl text-black-500 pb-5">KEMEDIK</h1>
                                 <h1 className="font-reguler lg:text-lg md:text-lg sm:text-sm text-black-500">Solusi management klinik anda sesuai dengan standarisasi Kementrian Kesehatan</h1>
                             </div>
                         </div>
@@ -346,7 +346,7 @@ const Landing = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex sm:flex-col md:flex-row lg:flex-col gap-8 lg:justify-between">
+                        <div className="flex flex-col md:flex-row lg:flex-col gap-8 lg:justify-between">
                             <div className="flex flex-col gap-9">
                                 <div className="flex items-stretch gap-4">
                                     <img src={phoneIcon} alt="arrow" />
@@ -377,7 +377,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative w-full lg:w-1/2 p-14">
+                    <div className="relative w-full w-full lg:w-1/2 p-14">
                         <img className="absolute top-0 right-0" src={circle} alt="circle" />
                         <img className="absolute bottom-0 left-0" src={dot} alt="dot" />
                         <div className="relative flex flex-col gap-8 p-8 rounded-2xl bg-white shadow-lg z-40">

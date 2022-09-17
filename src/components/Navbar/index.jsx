@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.jpg";
 import icon from "../../assets/navbar-icon.svg";
 import Button from "../Button";
 
+
+
 export default function Navbar() {
+  const [openNav, setOpenNav] = useState(false)
+  const klik = () => {
+    setOpenNav(!openNav)
+  }
   return (
     <>
       <div className="flex justify-between">
@@ -31,41 +37,48 @@ export default function Navbar() {
           </Button>
           <Button isOutline={true}>Punya Akun?</Button>
         </div>
-        <button className="sm:hidden">
+        <button className="sm:hidden" onClick={klik}>
           <img src={icon} alt="" />
         </button>
       </div>
 
-      <div className="sm:hidden grid mt-4 ">
-        <Button
-          className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
-          isActive={true}
-          type="link"
-        >
-          Home
-        </Button>
-        <Button
-          className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
-          isActive={false}
-          type="link"
-        >
-          Tentang
-        </Button>
-        <Button
-          className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
-          isActive={false}
-          type="link"
-        >
-          Layanan
-        </Button>
-        <Button
-          className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
-          isActive={false}
-          type="link"
-        >
-          Fitur
-        </Button>
-        <Button isOutline={true}>Sudah Bergabung?</Button>
+      <div>
+        {
+          openNav === true ? (
+            <div className="grid mt-4">
+              <Button
+                className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
+                isActive={true}
+                type="link"
+              >
+                Home
+              </Button>
+              <Button
+                className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
+                isActive={false}
+                type="link"
+              >
+                Tentang
+              </Button>
+              <Button
+                className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
+                isActive={false}
+                type="link"
+              >
+                Layanan
+              </Button>
+              <Button
+                className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
+                isActive={false}
+                type="link"
+              >
+                Fitur
+              </Button>
+              <Button isOutline={true}>Sudah Bergabung?</Button>
+            </div>
+          ) : (null)
+        }
+
       </div>
     </>
   );
