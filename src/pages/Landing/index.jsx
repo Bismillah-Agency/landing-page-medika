@@ -220,7 +220,7 @@ const Landing = () => {
                         />
                     </div>
                 </section>
-                <section className="mt-40 border">
+                <section className="mt-40 justify-items-center">
                     <div className="flex lg:flex-row justify-between flex-col">
                         <div className="rounded-2xl sm:justify-self-center pb-10 md:p-10">
                             <img src={assetpesan} alt="" className="" />
@@ -241,7 +241,7 @@ const Landing = () => {
                 <section className="flex flex-col gap-4 mt-20">
                     <h5 className="text-xl font-semibold text-blue-500">TENTANG</h5>
                     <div className="flex flex-col lg:flex-row gap-10 justify-between">
-                        <img src={logo} alt="" className="lg:w-3/12 md:w-1/4 sm:w-1/4" />
+                        <img src={logo} alt="" className="w-3/12 md:w-1/4" />
                         <div className="flex flex-col self-center">
                             <h3 className="text-4xl font-bold pb-5">
                                 Kelola Medika
