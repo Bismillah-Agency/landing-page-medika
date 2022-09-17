@@ -377,7 +377,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative w-full w-full lg:w-1/2 p-14">
+                    <div className="relative w-full lg:p-14">
                         <img className="absolute top-0 right-0" src={circle} alt="circle" />
                         <img className="absolute bottom-0 left-0" src={dot} alt="dot" />
                         <div className="relative flex flex-col gap-8 p-8 rounded-2xl bg-white shadow-lg z-40">
