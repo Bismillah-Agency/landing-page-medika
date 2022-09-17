@@ -223,7 +223,7 @@ const Landing = () => {
                 <section className="mt-40 border">
                     <div className="flex lg:flex-row justify-between flex-col">
                         <div className="rounded-2xl sm:justify-self-center pb-10 md:p-10">
-                            <img src={assetpesan} alt="" className="pr-20" />
+                            <img src={assetpesan} alt="" className="" />
                         </div>
                         <div className="self-center md:w-1/2 w-full">
                             <div className="text-left rounded-3xl drop-shadow-lg bg-white p-10">
