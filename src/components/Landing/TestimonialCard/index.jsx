@@ -14,7 +14,7 @@ const TestimonialCard = (props) => {
   let review2 = props.userReview;
   review2 = review.substr(0, 100);
   return (
-    <div className="h-full scroll">
+    <div className="h-full scroll m-5">
       <div className="flex flex-col hidden sm:block">
         <div className=" ml-5 mt-5">
           <p className="md:text-2xl text-lg font-semibold text-slate-700">
@@ -44,9 +44,9 @@ const TestimonialCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="sm:hidden w-5/6 h-full pb-10">
+      <div className="sm:hidden w-full h-full pb-10">
         <div className="flex flex-row items-center drop-shadow-xl bg-white rounded-2xl">
-          <div className="rounded-2xl h-40 w-56 overflow-hidden m-5">
+          <div className="rounded-2xl h-40 w-60 overflow-hidden m-5">
             <img
               className="h-full object-cover w-full"
               src={props.userImg}

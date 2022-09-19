@@ -34,6 +34,9 @@ export default function Navbar() {
             Layanan
           </Button>
           <Button isActive={false} type="link">
+            Artikel
+          </Button>
+          <Button isActive={false} type="link">
             Fitur
           </Button>
           <Button isOutline={true}>Punya Akun?</Button>
@@ -78,7 +81,7 @@ export default function Navbar() {
             >
               Fitur
             </Button>
-            <Button isOutline={true}>Sudah Bergabung?</Button>
+            <Button isOutline={true}>Punya Akun?</Button>
           </div>
         ) : null}
       </div>
