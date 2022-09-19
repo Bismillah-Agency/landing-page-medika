@@ -127,6 +127,10 @@ const Landing = () => {
     },
   ];
 
+  const text = "Kelola akan memberikan layanan management klink agak klinik anda lebih baik dalam management dan alur kerjanya.Teknologi dan Fitur lengkap yang telah disesuaikan dengan standar dari Kementerian Kesehatan.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce volutpat, sapien eget pretium dictum, diam urna mattis nunc, eu volutpat mauris nulla nec lectus. Donec a urna quam.Curabitur dictum suscipit neque ac vehicula.Cras lectus felis, sodales nec orci eu, mattis porttitor tortor.";
+
+  const text2 = text.substring(0, 150);
+
   const handleOpenGoogleMaps = () => {
     window.open("https://goo.gl/maps/FtotQVgufJL1XzdV6", "_blank");
   };
@@ -244,22 +248,17 @@ const Landing = () => {
         <section className="flex flex-col gap-4 mt-20" id="tentang">
           <h5 className="text-xl font-semibold text-blue-500">TENTANG</h5>
           <div className="flex flex-col lg:flex-row gap-10 justify-between">
-            <div className="w-3/12 md:w-2/6">
+            <div className="w-4/12 lg:w-7/12 md:w-2/12">
               <img src={logo} alt="" className="" />
             </div>
             <div className="flex flex-col self-center">
               <h3 className="text-4xl font-bold pb-5">Kelola Medika</h3>
               <div className="flex flex-col gap-4">
-                <p className="text-lg text-slate-400 text-justify">
-                  Kelola akan memberikan layanan management klink agak klinik
-                  anda lebih baik dalam management dan alur kerjanya. Teknologi
-                  dan Fitur lengkap yang telah disesuaikan dengan standar dari
-                  Kementerian Kesehatan. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Fusce volutpat, sapien eget pretium dictum,
-                  diam urna mattis nunc, eu volutpat mauris nulla nec lectus.
-                  Donec a urna quam. Curabitur dictum suscipit neque ac
-                  vehicula. Cras lectus felis, sodales nec orci eu, mattis
-                  porttitor tortor.
+                <p className="text-lg text-slate-400 text-justify hidden md:block">
+                  {text}
+                </p>
+                <p className="text-lg text-slate-400 text-justify md:hidden">
+                  {text2}
                 </p>
                 <div className="flex items-stretch">
                   <button className="self-center text-base mr-2 font-semibold text-orange-400">
@@ -277,9 +276,9 @@ const Landing = () => {
               <h5 className="text-xl font-semibold text-blue-500">
                 LAYANAN KAMI
               </h5>
-              <h2 className="text-4xl font-bold">Layanan KEMEDIK</h2>
+              <h2 className="text-4xl font-bold">Layanan Kelola Medika</h2>
             </div>
-            <div className="lg:self-center">
+            <div className="lg:self-center md:text-sm text-sm">
               <Button isOutline={true}>Lihat Lebih..</Button>
             </div>
           </div>
@@ -302,7 +301,7 @@ const Landing = () => {
               <h5 className="text-xl font-semibold text-blue-500">ARTIKEL</h5>
               <h2 className="text-4xl font-bold">Artikel Kelola Medika</h2>
             </div>
-            <div className="lg:self-center">
+            <div className="lg:self-center md:text-sm text-sm">
               <Button isOutline={true}>Lihat Lebih..</Button>
             </div>
           </div>
