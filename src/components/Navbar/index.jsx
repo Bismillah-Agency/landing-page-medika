@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
 
         <div className="sm:flex gap-8 md:gap-5 hidden">
-          <Button isActive={true} type="link">
+          <Button isActive={true} type="link" >
             Home
           </Button>
           <Button isActive={false} type="link">

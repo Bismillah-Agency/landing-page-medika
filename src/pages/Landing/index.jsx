@@ -251,7 +251,7 @@ const Landing = () => {
               <img src={logo} alt="" className="" />
             </div>
             <div className="flex flex-col self-center">
-              <h3 className="text-4xl font-bold pb-5">Kelola Medika</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold pb-5">Kelola Medika</h3>
               <div className="flex flex-col gap-4">
                 <p className="text-lg text-slate-400 text-justify hidden md:block">
                   {text}
@@ -275,7 +275,7 @@ const Landing = () => {
               <h5 className="text-xl font-semibold text-blue-500">
                 LAYANAN KAMI
               </h5>
-              <h2 className="text-4xl font-bold">Layanan Kelola Medika</h2>
+              <h2 className="sm:text-4xl text-2xl font-bold">Layanan Kelola Medika</h2>
             </div>
             <div className="lg:self-center md:text-sm text-sm">
               <Button isOutline={true}>Lihat Lebih..</Button>
@@ -298,7 +298,7 @@ const Landing = () => {
           <div className="flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between">
             <div className="flex flex-col gap-4">
               <h5 className="text-xl font-semibold text-blue-500">ARTIKEL</h5>
-              <h2 className="text-4xl font-bold">Artikel Kelola Medika</h2>
+              <h2 className="sm:text-4xl text-2xl font-bold">Artikel Kelola Medika</h2>
             </div>
             <div className="lg:self-center md:text-sm text-sm">
               <Button isOutline={true}>Lihat Lebih..</Button>
@@ -321,7 +321,7 @@ const Landing = () => {
               FITUR
             </h5>
             <div className="flex flex-col gap-2">
-              <h2 className="text-4xl font-bold text-center">
+              <h2 className="sm:text-4xl text-2xl font-bold text-center">
                 Fitur Kelola Medika
               </h2>
               <p className="text-lg text-slate-400 text-center">
@@ -369,7 +369,7 @@ const Landing = () => {
                 KONTAK KAMI
               </h5>
               <div className="flex flex-col gap-4">
-                <h2 className="text-4xl font-bold">
+                <h2 className="sm:text-4xl text-2xl font-bold">
                   Ayo bergabung dengan kami!
                 </h2>
                 <p className="text-lg text-slate-400">
@@ -417,7 +417,7 @@ const Landing = () => {
             <img className="absolute bottom-0 left-0" src={dot} alt="dot" />
             <div className="relative flex flex-col gap-8 p-8 rounded-2xl bg-white shadow-lg z-40">
               <h3 className="text-2xl font-bold z-50">
-                Ayo kirimkan <span className="text-blue-500">pesan</span>
+                Kirimkan <span className="text-blue-500">pesan</span>
               </h3>
               <form className="z-50">
                 <div className="flex flex-col mb-8 gap-3">
