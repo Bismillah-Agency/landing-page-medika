@@ -204,8 +204,9 @@ const Landing = () => {
             <div className="flex flex-col gap-5">
               <h1 className="text-4xl md:text-5xl font-bold leading-normal">
                 Memberikan <span className="text-blue-500">Solusi Terbaik</span>{" "}
+                Klinik Anda
               </h1>
-              <p className="text-base text-slate-400 w-3/4">
+              <p className="text-base text-slate-400 md:w-3/4 w-full">
                 Layanan Sistem Informasi manajemen Klinik terintegrasi dalam
                 mengelola dan mengembangkan bisnis Klinik Anda agar lebih
                 efektif dan efisien. Sehingga berdampak pada pelayanan dan
