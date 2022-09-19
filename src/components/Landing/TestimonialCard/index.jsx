@@ -45,8 +45,8 @@ const TestimonialCard = (props) => {
         </div>
       </div>
       <div className="sm:hidden w-full h-full pb-10">
-        <div className="flex flex-row gap-5 items-center mr-8 drop-shadow-xl bg-white rounded-2xl">
-          <div className="rounded-2xl h-52 w-80 overflow-hidden">
+        <div className="flex flex-row  items-center mr-8 drop-shadow-xl bg-white rounded-2xl">
+          <div className="rounded-2xl h-40 w-60 overflow-hidden m-5">
             <img
               className="h-full object-cover w-full"
               src={props.userImg}

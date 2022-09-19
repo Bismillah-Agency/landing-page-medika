@@ -9,7 +9,7 @@ const Card = ({ img, title, desc }) => {
 
     return (
         <div className='rounded-xl cursor-pointer p-5 grid-cols-3 hover:shadow-lg hover:scale-105 transition-all'>
-            <div className='rounded-2xl h-60 mb-7 w-full overflow-hidden'>
+            <div className='rounded-2xl md:h-60 h-32 mb-7 w-full overflow-hidden'>
                 <img className='object-cover w-full h-full' src={img} alt="img" />
             </div>
 
