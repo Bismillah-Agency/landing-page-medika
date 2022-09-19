@@ -142,7 +142,7 @@ const Landing = () => {
             height="900"
             viewBox="0 200 400 1060"
             fill="none"
-            // xmlns="http://www.w3.org/2000/svg"
+          // xmlns="http://www.w3.org/2000/svg"
           >
             <path
               d="M1060 530C1060 822.711 822.711 1060 530 1060C237.289 1060 0 822.711 0 530C0 237.289 237.289 0 530 0C822.711 0 1060 237.289 1060 530ZM159 530C159 734.898 325.102 901 530 901C734.898 901 901 734.898 901 530C901 325.102 734.898 159 530 159C325.102 159 159 325.102 159 530Z"
@@ -195,7 +195,7 @@ const Landing = () => {
 
         <Navbar />
 
-        <section className="mt-20 gap-x-12 flex justify-content-between flex-col md:flex-row items-center sm:gap-y-1 lg:gap-y-0">
+        <section className="md:mt-20 mt-10 gap-x-12 flex justify-content-between flex-col md:flex-row items-center sm:gap-y-1 lg:gap-y-0">
           <div className="flex flex-col gap-12 w-full md:w-1/2 ">
             <div className="flex flex-col gap-5">
               <h1 className="text-5xl font-bold leading-normal">
