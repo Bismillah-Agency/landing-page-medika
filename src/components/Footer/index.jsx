@@ -15,7 +15,7 @@ const Footer = () => {
             <img className="self-start h-20" src={logo} alt="logo" />
             <h1 className="font-bold text-xl self-center">KEMEDIK</h1>
           </div>
-          <p className="text-lg text-slate-400">
+          <p className="md:text-lg text-md text-slate-400">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form.
           </p>
@@ -24,13 +24,13 @@ const Footer = () => {
           <div className="flex flex-col w-40">
             <h5 className="text-lg font-bold mb-5 text-blue-500">Links</h5>
             <div className="flex flex-col gap-4">
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 Tentang
               </button>
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 Layanan
               </button>
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 Fitur
               </button>
             </div>
@@ -40,16 +40,16 @@ const Footer = () => {
               Media Sosial
             </h5>
             <div className="flex flex-col gap-4">
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 Instagram
               </button>
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 WhatsApp
               </button>
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 Twitter
               </button>
-              <button className="text-start text-lg text-slate-400">
+              <button className="text-start md:text-lg text-md text-slate-400">
                 LinkedIn
               </button>
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
       </div>
       <hr className="p-0 m-0" />
       <div className="flex justify-center">
-        <p className="text-lg text-slate-400">
+        <p className="md:text-lg text-md text-center text-slate-400">
           All right reserved. Created and Designed with ❤ by{" "}
           <span className="font-semibold text-lg text-blue-500">KEMEDIK</span>
         </p>

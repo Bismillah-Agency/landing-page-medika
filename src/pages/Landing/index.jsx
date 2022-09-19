@@ -257,7 +257,7 @@ const Landing = () => {
                 <p className="text-lg text-slate-400 text-justify hidden md:block">
                   {text}
                 </p>
-                <p className="text-lg text-slate-400 text-justify md:hidden">
+                <p className="text-md text-slate-400 text-justify md:hidden">
                   {text2}
                 </p>
                 <div className="flex items-stretch">
