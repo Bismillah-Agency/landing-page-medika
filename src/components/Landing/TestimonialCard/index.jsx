@@ -44,7 +44,7 @@ const TestimonialCard = (props) => {
           </div>
         </div>
       </div>
-      <div className="sm:hidden w-full h-full pb-10">
+      <div className="sm:hidden w-full h-full">
         <div className="flex flex-row items-center drop-shadow-xl bg-white rounded-2xl">
           <div className="rounded-2xl h-40 w-60 overflow-hidden m-5">
             <img

@@ -79,6 +79,13 @@ export default function Navbar() {
               isActive={false}
               type="link"
             >
+              Artikel
+            </Button>
+            <Button
+              className="py-3 hover:bg-blue-500 hover:text-white rounded-full"
+              isActive={false}
+              type="link"
+            >
               Fitur
             </Button>
             <Button isOutline={true}>Punya Akun?</Button>
