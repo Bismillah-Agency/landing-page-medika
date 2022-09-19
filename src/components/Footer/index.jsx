@@ -36,7 +36,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col w-40">
-            <h5 className="text-lg font-bold mb-5 text-blue-500">Media Sosial</h5>
+            <h5 className="text-lg font-bold mb-5 text-blue-500">
+              Media Sosial
+            </h5>
             <div className="flex flex-col gap-4">
               <button className="text-start text-lg text-slate-400">
                 Instagram
@@ -52,7 +54,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col hidden sm:block">
             <h5 className="text-lg font-bold mb-5 text-blue-500">
               Alamat Kami
             </h5>
@@ -64,6 +66,17 @@ const Footer = () => {
                 alt="agency"
               />
             </div>
+          </div>
+        </div>
+        <div className=" sm:hidden flex flex-col">
+          <h5 className="text-lg font-bold mb-5 text-blue-500">Alamat Kami</h5>
+          <div>
+            <img
+              onClick={handleMapsImage}
+              className="rounded-xl h-36 cursor-pointer"
+              src={maps}
+              alt="agency"
+            />
           </div>
         </div>
       </div>

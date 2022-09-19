@@ -1,53 +1,69 @@
-import React from 'react'
-
-import YellowStars from "../../../assets/star_active.svg";
-import WhiteStars from "../../../assets/star_inactive.svg";
-
+import React from "react";
+import "./index.css";
 
 const TestimonialCard = (props) => {
-    // const propsExample = {
-    //     imgLink: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    //     rating: 4,
-    //     review: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
-    //     userName: 'Gisani Miftahul Rahma',
-    //     userDetail: 'Owner of My Heart'
-    // }
-
-    const yellowStars = [];
-    const whiteStars = [];
-
-    for (let index = 0; index < props.userRating; index++) {
-        yellowStars.push(<img src={YellowStars} alt="star" className='h-5 w-5' />)
-    }
-    for (let index = 0; index < 5 - props.userRating; index++) {
-        yellowStars.push(<img src={WhiteStars} alt="star" className='h-5 w-5' />)
-    }
-
-    return (
-        <div className='flex flex-col sm:flex-row gap-6 h-fit'>
-            <div className='hidden sm:block sm:h-[240px] sm:w-[240px] md:h-[280px] md:w-[280px] rounded-2xl'>
-                <img className='rounded-2xl' src={props.userImg} alt={props.userName} />
-            </div>
-            <div className='flex flex-col gap-6 sm:gap-0 sm:justify-between sm:w-[592px]'>
-                <div className='flex flex-col gap-2'>
-                    <div className='flex mr-1'>
-                        {yellowStars}
-                        {whiteStars}
-                    </div>
-                    <p className='text-xl text-slate-400'>{props.userReview}</p>
-                </div>
-                <div className='flex gap-3 items-center'>
-                    <div className='sm:hidden h-12 w-12 rounded-xl overflow-hidden '>
-                        <img className='' src={props.userImg} alt={props.userName} />
-                    </div>
-                    <div>
-                        <p className='text-xl font-semibold text-slate-700'>{props.userName}</p>
-                        <p className='text-slate-400'>{props.userDetail}</p>
-                    </div>
-                </div>
-            </div>
+  // const propsExample = {
+  //     imgLink: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+  //     rating: 4,
+  //     review: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.`,
+  //     userName: 'Gisani Miftahul Rahma',
+  //     userDetail: 'Owner of My Heart'
+  // }
+  let review = props.userReview;
+  review = review.substr(0, 180);
+  let review2 = props.userReview;
+  review2 = review.substr(0, 100);
+  return (
+    <div className="h-full scroll">
+      <div className="flex flex-col hidden sm:block">
+        <div className=" ml-5 mt-5">
+          <p className="md:text-2xl text-lg font-semibold text-slate-700">
+            {props.userName}
+          </p>
+          <p className="text-slate-400 text-lg md:text-md">
+            {props.userDetail}
+          </p>
         </div>
-    )
-}
+        <div className="flex flex-row items-center rounded-2xl drop-shadow-xl mb-10">
+          <div className="rounded-2xl w-full h-40 bg-white overflow-hidden m-5">
+            <img
+              className="rounded-2xl object-cover"
+              src={props.userImg}
+              alt={props.userName}
+            />
+          </div>
+          <div className="flex flex-col gap-2 sm:justify-center sm:w-[450px] md:m-5 pr-5">
+            <div className="container">
+              <p className="md:text-md text-sm text-slate-400">{review}</p>
+            </div>
+            {/* <div className="sm:hidden">
+            <p className="md:text-xl text-md font-semibold text-slate-700 mb-2">
+              {props.userName}
+            </p>
+          </div> */}
+          </div>
+        </div>
+      </div>
+      <div className="sm:hidden w-full h-full pb-10">
+        <div className="flex flex-row gap-5 items-center mr-8 drop-shadow-xl bg-white rounded-2xl">
+          <div className="rounded-2xl h-52 w-80 overflow-hidden">
+            <img
+              className="h-full object-cover w-full"
+              src={props.userImg}
+              alt="img"
+            />
+          </div>
+          <div className="w-full pr-5">
+            <p className="md:text-xl text-xl font-bold text-slate-700 mb-2">
+              {props.userName}
+            </p>
+            {/* <p className="text-slate-600 text-md mb-5">{props.userDetail}</p> */}
+            <p className="md:text-md text-sm text-slate-400">{review2}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default TestimonialCard
+export default TestimonialCard;
