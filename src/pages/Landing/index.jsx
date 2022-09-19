@@ -202,9 +202,8 @@ const Landing = () => {
         <section className="md:mt-20 mt-10 gap-x-12 flex justify-content-between flex-col md:flex-row items-center sm:gap-y-1 lg:gap-y-0">
           <div className="flex flex-col gap-12 w-full md:w-1/2 ">
             <div className="flex flex-col gap-5">
-              <h1 className="text-5xl font-bold leading-normal">
+              <h1 className="text-4xl md:text-5xl font-bold leading-normal">
                 Memberikan <span className="text-blue-500">Solusi Terbaik</span>{" "}
-                Untuk Klink Anda
               </h1>
               <p className="text-base text-slate-400 w-3/4">
                 Layanan Sistem Informasi manajemen Klinik terintegrasi dalam
