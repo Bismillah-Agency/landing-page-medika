@@ -19,7 +19,8 @@ export default function Index(props) {
   if (props.isActive) className.push("text-blue-500");
 
   const onClick = () => {
-    if (props.onClick) props.onClick();
+    if (props.onClick)
+      <Link to={props.onClick()}></Link>;
   };
   console.log(props.sectionId);
   if (props.type === "link") {

@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/Logo.png";
 import maps from "../../assets/maps.png";
 
 const Footer = () => {
   const handleMapsImage = () => {
-    window.open("https://goo.gl/maps/FtotQVgufJL1XzdV6", "_blank");
+    window.open("https://goo.gl/maps/JyNmj3otg3fMxWRM7", "_blank");
   };
 
   return (
@@ -12,8 +12,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
         <div className="flex flex-col w-full lg:w-80 gap-5">
           <div className="flex flex-row">
-            <img className="self-start h-20" src={logo} alt="logo" />
-            <h1 className="font-bold text-xl self-center">KEMEDIK</h1>
+            <img className="self-start" src={logo} alt="logo" />
           </div>
           <p className="md:text-lg text-md text-slate-400">
             There are many variations of passages of Lorem Ipsum available, but

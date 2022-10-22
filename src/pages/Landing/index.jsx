@@ -6,8 +6,10 @@ import ServiceItem from "../../components/Landing/ServiceItem";
 import Footer from "../../components/Footer";
 import arrowRight from "../../assets/ic_arrow_right_circle.svg";
 import heroimage from "../../assets/doctor.png";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/Logo.png";
 import assetpesan from "../../assets/pesan.png";
+import pesan from "../../assets/send.png";
+import { useNavigate } from "react-router-dom";
 
 import {
   // personalWebIcon,
@@ -28,6 +30,7 @@ import {
 import TestimonialCard from "../../components/Landing/TestimonialCard";
 
 const Landing = () => {
+  const navigate = useNavigate();
   const cardData = [
     {
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YZU6viJSqxbL9hGCn5LuDEUJXWwyTYtjbQ&usqp=CAU",
@@ -127,7 +130,8 @@ const Landing = () => {
     },
   ];
 
-  const text = "Kelola akan memberikan layanan management klink agak klinik anda lebih baik dalam management dan alur kerjanya.Teknologi dan Fitur lengkap yang telah disesuaikan dengan standar dari Kementerian Kesehatan.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce volutpat, sapien eget pretium dictum, diam urna mattis nunc, eu volutpat mauris nulla nec lectus. Donec a urna quam.Curabitur dictum suscipit neque ac vehicula.Cras lectus felis, sodales nec orci eu, mattis porttitor tortor.";
+  const text =
+    "Kelola akan memberikan layanan management klink agak klinik anda lebih baik dalam management dan alur kerjanya.Teknologi dan Fitur lengkap yang telah disesuaikan dengan standar dari Kementerian Kesehatan.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Fusce volutpat, sapien eget pretium dictum, diam urna mattis nunc, eu volutpat mauris nulla nec lectus. Donec a urna quam.Curabitur dictum suscipit neque ac vehicula.Cras lectus felis, sodales nec orci eu, mattis porttitor tortor.";
 
   const text2 = text.substring(0, 150);
 
@@ -135,11 +139,25 @@ const Landing = () => {
     window.open("https://goo.gl/maps/FtotQVgufJL1XzdV6", "_blank");
   };
 
+  const handleWa = () => {
+    window.open("https://wa.me/6281355538777", "_blank")
+  };
+  const handleIg = () => {
+    window.open("https://www.instagram.com/nathan_syr", "_blank")
+  };
+  const handleEmail = () => {
+    window.open("mailto:kelolamedika@gmail.com?subject=Tanya Kelola & body=Hai,  ", "_blank")
+  };
   return (
     <>
-      {/* <img className="absolute -z-40 h-full w-full" src={ellipse.svg} alt="" /> */}
-
-      <div className="relative px-10 md:px-16 lg:px-20 xl:px-28 pt-14 pb-6 scroll-smooth ">
+      {/* <div className="relative px-10 md:px-16 lg:px-20 xl:px-28 pt-14 pb-6 z-10 mx-auto w-full">
+        <div className=" bg-white w-full" >
+          <div className="w-full">
+            <Navbar />
+          </div>
+        </div >
+      </div> */}
+      <div className="relative px-10 md:px-16 lg:px-20 xl:px-28 scroll-smooth">
         <div className="absolute -z-10 top-0 right-0">
           <svg
             width="900"
@@ -196,9 +214,7 @@ const Landing = () => {
                         />
                     </svg>
                 </div> */}
-
         <Navbar />
-
         <section className="md:mt-20 mt-10 gap-x-12 flex justify-content-between flex-col md:flex-row items-center sm:gap-y-1 lg:gap-y-0">
           <div className="flex flex-col gap-12 w-full md:w-1/2 ">
             <div className="flex flex-col gap-5">
@@ -214,7 +230,7 @@ const Landing = () => {
               </p>
             </div>
             <Button isPrimary={true} isLarge={false}>
-              Bergabung
+              Coba Sekarang
             </Button>
           </div>
           <div className="mx-auto">
@@ -227,32 +243,46 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <section className="mt-40 justify-items-center">
+        <section className="flex flex-col mt-40 justify-items-center">
           <div className="flex lg:flex-row justify-between flex-col">
-            <div className="rounded-2xl sm:justify-self-center pb-10 md:p-10">
+            <div className="rounded-2xl sm:justify-self-center self-center pb-10 md:p-10">
               <img src={assetpesan} alt="" className="" />
             </div>
-            <div className="self-center md:w-1/2 w-full">
+            <div className="self-center md:w-3/4 w-full">
               <div className="text-left rounded-3xl drop-shadow-lg bg-white p-10">
-                <h1 className="font-bold  md:text-4xl text-3xl text-black-500 pb-5">
-                  KEMEDIK
-                </h1>
-                <h1 className="font-reguler lg:text-lg md:text-lg sm:text-sm text-black-500">
-                  Solusi management klinik anda sesuai dengan standarisasi
-                  Kementrian Kesehatan
-                </h1>
+                <div className="container mb-5">
+                  <h1 className="font-bold  md:text-3xl text-2xl text-black-500 pb-5">
+                    KEMEDIK
+                  </h1>
+                  <p className="font-reguler lg:text-lg md:text-lg sm:text-sm text-black-500">
+                    Solusi management klinik anda sesuai dengan standarisasi
+                    Kementrian Kesehatan
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          {/* <div className="container">
+            <div className="flex flex-row">
+              <div className="w-1/4">
+                
+              </div>
+              <div className="w-3/4">
+                <p>Mendeskripsikan tujuan perusahaan di masa mendatang. Berbeda dengan misi, visi biasanya menggambarkan apa yang ingin diraih perusahaan.</p>
+              </div>
+            </div>
+          </div> */}
         </section>
         <section className="flex flex-col gap-4 mt-20" id="tentang">
           <h5 className="text-xl font-semibold text-blue-500">TENTANG</h5>
-          <div className="flex flex-col lg:flex-row gap-10 justify-between">
-            <div className="w-4/12 lg:w-7/12 md:w-2/12">
+          <div className="flex flex-col lg:flex-row w-40, h items-center gap-10 justify-between ">
+            <div className="w-4/12 lg:w-7/12 md:w-2/12 ">
               <img src={logo} alt="" className="" />
             </div>
             <div className="flex flex-col self-center">
-              <h3 className="sm:text-4xl text-2xl font-bold pb-5">Kelola Medika</h3>
+              <h3 className="sm:text-4xl text-2xl font-bold pb-5">
+                Kelola Medika
+              </h3>
               <div className="flex flex-col gap-4">
                 <p className="text-lg text-slate-400 text-justify hidden md:block">
                   {text}
@@ -261,7 +291,7 @@ const Landing = () => {
                   {text2}
                 </p>
                 <div className="flex items-stretch">
-                  <button className="self-center text-base mr-2 font-semibold text-orange-400">
+                  <button className="self-center text-base mr-2 font-semibold text-orange-400" onClick={() => navigate('/detail')}>
                     Baca Lebih..
                   </button>
                   <img src={arrowRight} alt="arrow" />
@@ -276,10 +306,9 @@ const Landing = () => {
               <h5 className="text-xl font-semibold text-blue-500">
                 LAYANAN KAMI
               </h5>
-              <h2 className="sm:text-4xl text-2xl font-bold">Layanan Kelola Medika</h2>
-            </div>
-            <div className="lg:self-center md:text-sm text-sm">
-              <Button isOutline={true}>Lihat Lebih..</Button>
+              <h2 className="sm:text-4xl text-2xl font-bold">
+                Layanan Kelola Medika
+              </h2>
             </div>
           </div>
           <div className="flex flex-row flex-nowrap overflow-x-auto overflow-y-hidden scroll">
@@ -291,27 +320,6 @@ const Landing = () => {
                 userDetail={item.userDetail}
                 userRating={item.rating}
                 userReview={item.review}
-              />
-            ))}
-          </div>
-        </section>
-        <section className="flex flex-col gap-14 mt-20" id="artikel">
-          <div className="flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between">
-            <div className="flex flex-col gap-4">
-              <h5 className="text-xl font-semibold text-blue-500">ARTIKEL</h5>
-              <h2 className="sm:text-4xl text-2xl font-bold">Artikel Kelola Medika</h2>
-            </div>
-            <div className="lg:self-center md:text-sm text-sm">
-              <Button isOutline={true}>Lihat Lebih..</Button>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 mx-auto">
-            {cardData.map((item, itemIdx) => (
-              <Card
-                key={itemIdx}
-                img={item.img}
-                title={item.title}
-                desc={item.desc}
               />
             ))}
           </div>
@@ -337,6 +345,29 @@ const Landing = () => {
                 title={item.title}
                 desc={item.desc}
                 icon={item.icon}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="flex flex-col gap-14 mt-20" id="artikel">
+          <div className="flex flex-col gap-6 lg:gap-0 lg:flex-row lg:justify-between">
+            <div className="flex flex-col gap-4">
+              <h5 className="text-xl font-semibold text-blue-500">ARTIKEL</h5>
+              <h2 className="sm:text-4xl text-2xl font-bold">
+                Artikel Kelola Medika
+              </h2>
+            </div>
+            <div className="lg:self-center md:text-sm text-sm">
+              <Button isOutline={true}>Lihat Lebih..</Button>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8 mx-auto">
+            {cardData.map((item, itemIdx) => (
+              <Card
+                key={itemIdx}
+                img={item.img}
+                title={item.title}
+                desc={item.desc}
               />
             ))}
           </div>
@@ -380,22 +411,22 @@ const Landing = () => {
               </div>
             </div>
             <div className="flex flex-col md:flex-row lg:flex-col gap-8 lg:justify-between">
-              <div className="flex flex-col gap-9">
-                <div className="flex items-stretch gap-4">
+              <div className="flex flex-col gap-9 cursor-pointer">
+                <div className="flex items-stretch gap-4" onClick={handleWa}>
                   <img src={phoneIcon} alt="arrow" />
                   <p className="self-center text-xl mr-2 font-semibold">
                     +6285740564139
                   </p>
                 </div>
-                <div className="flex items-stretch gap-4">
+                <div className="flex items-stretch gap-4 cursor-pointer" onClick={handleEmail}>
                   <img src={emailIcon} alt="arrow" />
                   <p className="self-center text-xl mr-2 font-semibold">
                     kelolamedika@gmail.com
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-9">
-                <div className="flex items-stretch gap-4">
+              <div className="flex flex-col gap-9 cursor-pointer">
+                <div className="flex items-stretch gap-4" onClick={handleIg}>
                   <img src={instagramIcon} alt="arrow" />
                   <p className="self-center text-xl mr-2 font-semibold">
                     @kelolamedika
@@ -417,9 +448,12 @@ const Landing = () => {
             <img className="absolute top-0 right-0" src={circle} alt="circle" />
             <img className="absolute bottom-0 left-0" src={dot} alt="dot" />
             <div className="relative flex flex-col gap-8 p-8 rounded-2xl bg-white shadow-lg z-40">
-              <h3 className="text-2xl font-bold z-50">
-                Kirimkan <span className="text-blue-500">pesan</span>
-              </h3>
+              <div className="flex flex-row gap-5 items-center">
+                <img src={pesan} alt="" className="w-1/12" />
+                <h3 className="text-2xl font-bold z-50">
+                  Kirimkan <span className="text-blue-500">pesan</span>
+                </h3>
+              </div>
               <form className="z-50">
                 <div className="flex flex-col mb-8 gap-3">
                   <label for="email" className="text-base font-semibold">
@@ -458,7 +492,42 @@ const Landing = () => {
             </div>
           </div>
         </section>
-        <footer className="mt-40">
+        <section className="mt-20 flex flex-col">
+          <h5 className="text-xl font-semibold text-blue-500 mb-4">
+            PARTNER
+          </h5>
+          <div className="flex flex-col gap-4">
+            <h2 className="sm:text-4xl text-2xl font-bold">
+              Partner yang bekerjasama
+            </h2>
+            <p className="text-lg text-slate-400">
+              Berikut merupakan partner yang bekerja sama dengan kami!
+            </p>
+          </div>
+          <div className="rounded-t-2xl pt-5 mt-10 drop-shadow-3xl">
+            <div className="flex flex-row justify-center bg-white ml-4 mr-4 rounded-t-2xl flex-wrap">
+              <div className="p-3 lg:w-1/12 md:w-[80px] w-20">
+                <img src="http://rsud.pacitankab.go.id/wp-content/uploads/2019/08/Logo-BPJS-Kesehatan.png" className="object-cover" alt="" />
+              </div>
+              <div className="p-3 lg:w-1/12 md:w-[80px] w-20">
+                <img src="http://rsud.pacitankab.go.id/wp-content/uploads/2019/08/Logo-BPJS-Kesehatan.png" className="object-cover" alt="" />
+              </div>
+              <div className="p-3 lg:w-1/12 md:w-[80px] w-20">
+                <img src="http://rsud.pacitankab.go.id/wp-content/uploads/2019/08/Logo-BPJS-Kesehatan.png" className="object-cover" alt="" />
+              </div>
+              <div className="p-3 lg:w-1/12 md:w-[80px] w-20">
+                <img src="http://rsud.pacitankab.go.id/wp-content/uploads/2019/08/Logo-BPJS-Kesehatan.png" className="object-cover" alt="" />
+              </div>
+              <div className="p-3 lg:w-1/12 md:w-[80px] w-20">
+                <img src="http://rsud.pacitankab.go.id/wp-content/uploads/2019/08/Logo-BPJS-Kesehatan.png" className="object-cover" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+
+        </section>
+        <footer className="mt-20">
           <Footer />
         </footer>
       </div>
