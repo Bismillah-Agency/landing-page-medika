@@ -218,7 +218,7 @@ const Landing = () => {
         <section className="md:mt-20 mt-10 gap-x-12 flex justify-content-between flex-col md:flex-row items-center sm:gap-y-1 lg:gap-y-0">
           <div className="flex flex-col gap-12 w-full md:w-1/2 ">
             <div className="flex flex-col gap-5">
-              <h1 className="text-4xl md:text-5xl font-bold leading-normal">
+              <h1 className="text-3xl md:text-4xl font-bold leading-normal">
                 Memberikan <span className="text-blue-500">Solusi Terbaik</span>{" "}
                 Fasilitas Pelayanan Kesehatan
               </h1>
@@ -234,9 +234,9 @@ const Landing = () => {
             </Button>
           </div>
           <div className="mx-auto">
-            <div className="overflow-hidden lg:h-full lg:w-[31rem]">
+            <div className="overflow-hidden">
               <img
-                className="object-cover w-full h-full"
+                className="object-cover w-[400px]"
                 src={heroimage}
                 alt=""
               />
@@ -275,8 +275,8 @@ const Landing = () => {
         </section>
         <section className="flex flex-col gap-4 mt-20" id="tentang">
           <h5 className="text-xl font-semibold text-blue-500">TENTANG</h5>
-          <div className="flex flex-col lg:flex-row w-40, h items-center gap-10 justify-between ">
-            <div className="w-[160px] ">
+          <div className="flex flex-col lg:flex-row w-full, h items-center gap-10 justify-between ">
+            <div className="w-1/3 lg:w-full">
               <img src={logo} alt="" className="" />
             </div>
             <div className="flex flex-col self-center">
