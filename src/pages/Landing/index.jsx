@@ -220,7 +220,7 @@ const Landing = () => {
             <div className="flex flex-col gap-5">
               <h1 className="text-4xl md:text-5xl font-bold leading-normal">
                 Memberikan <span className="text-blue-500">Solusi Terbaik</span>{" "}
-                Klinik Anda
+                Fasilitas Pelayanan Kesehatan
               </h1>
               <p className="text-base text-slate-400 md:w-3/4 w-full">
                 Layanan Sistem Informasi manajemen Klinik terintegrasi dalam
@@ -252,7 +252,7 @@ const Landing = () => {
               <div className="text-left rounded-3xl drop-shadow-lg bg-white p-10">
                 <div className="container mb-5">
                   <h1 className="font-bold  md:text-3xl text-2xl text-black-500 pb-5">
-                    KEMEDIK
+                    KEMEDIS
                   </h1>
                   <p className="font-reguler lg:text-lg md:text-lg sm:text-sm text-black-500">
                     Solusi management klinik anda sesuai dengan standarisasi
@@ -276,12 +276,12 @@ const Landing = () => {
         <section className="flex flex-col gap-4 mt-20" id="tentang">
           <h5 className="text-xl font-semibold text-blue-500">TENTANG</h5>
           <div className="flex flex-col lg:flex-row w-40, h items-center gap-10 justify-between ">
-            <div className="w-4/12 lg:w-7/12 md:w-2/12 ">
+            <div className="w-[160px] ">
               <img src={logo} alt="" className="" />
             </div>
             <div className="flex flex-col self-center">
               <h3 className="sm:text-4xl text-2xl font-bold pb-5">
-                Kelola Medika
+                Kemedis
               </h3>
               <div className="flex flex-col gap-4">
                 <p className="text-lg text-slate-400 text-justify hidden md:block">
@@ -307,7 +307,7 @@ const Landing = () => {
                 LAYANAN KAMI
               </h5>
               <h2 className="sm:text-4xl text-2xl font-bold">
-                Layanan Kelola Medika
+                Layanan Kemedis
               </h2>
             </div>
           </div>
@@ -331,7 +331,7 @@ const Landing = () => {
             </h5>
             <div className="flex flex-col gap-2">
               <h2 className="sm:text-4xl text-2xl font-bold text-center">
-                Fitur Kelola Medika
+                Fitur Kemedis
               </h2>
               <p className="text-lg text-slate-400 text-center">
                 Fitur yang kami suguhkan untuk anda
@@ -354,7 +354,7 @@ const Landing = () => {
             <div className="flex flex-col gap-4">
               <h5 className="text-xl font-semibold text-blue-500">ARTIKEL</h5>
               <h2 className="sm:text-4xl text-2xl font-bold">
-                Artikel Kelola Medika
+                Artikel Kemedis
               </h2>
             </div>
             <div className="lg:self-center md:text-sm text-sm">

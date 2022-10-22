@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between">
         <div className="flex flex-col w-full lg:w-80 gap-5">
           <div className="flex flex-row">
-            <img className="self-start" src={logo} alt="logo" />
+            <img className="self-start w-1/2" src={logo} alt="logo" />
           </div>
           <p className="md:text-lg text-md text-slate-400">
             There are many variations of passages of Lorem Ipsum available, but
@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="flex justify-center">
         <p className="md:text-lg text-md text-center text-slate-400">
           All right reserved. Created and Designed with ❤ by{" "}
-          <span className="font-semibold text-lg text-blue-500">KEMEDIK</span>
+          <span className="font-semibold text-lg text-blue-500">Kemedis</span>
         </p>
       </div>
     </div>

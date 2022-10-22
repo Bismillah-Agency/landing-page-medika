@@ -26,7 +26,7 @@ export default function Navbar() {
             {/* <img src={logo} alt="" className="self-center"></img> */}
             {/* <h1 className="font-bold text-xl text-bold">LOGO</h1> */}
             <div className="flex">
-              <img src={logo} className="mr-5 lg:w-full md:w-1/2 sm:w-1/2" alt="" />
+              <img src={logo} className="mr-5 w-[160px]" alt="" />
             </div>
           </div>
 
